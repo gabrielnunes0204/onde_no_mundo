@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Where Is Country </title>
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/globo.png">
+</head>
+
+<body>
+	<div class="container">
+		<div class="menu">
+			<div>
+				<p> Onde no mundo? </p>
+			</div>
+
+			<div class="modo">
+				<img src="images/lua.png" alt="ícone" class="icone-mudar" id="escuro">
+				<img src="images/sol.png" style="display: none;" alt="ícone" class="icone-mudar" id="claro">
+				<p> Modo Escuro </p>
+			</div>
+		</div>
+
+		<div class="filtros">
+			<div class="pesquisa">
+				<input type="text" id="" class="input-pesquisa" placeholder="Procura por um país?">
+				<img src="images/lupa.svg" alt="lupa" class="lupa">
+			</div>
+
+			<div>
+				<select class="continentes">
+					<option>Filtrar por continente</option>
+					<option>Africa</option>
+					<option>Américas</option>
+					<option>Ásia</a> </option>
+					<option>Europa</option>
+					<option>Ocêania</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="paises">
+			<div id="pais1" class="pais">
+				<img src="images/paises/brasil.png" alt="Brasil" class="bandeira-pais">
+				<p class="nome-pais"> Brasil </p>
+				<p class="populacao-pais"> <strong> População: </strong> 250.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Américas </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Brasília </p>
+			</div>
+
+			<div id="pais2" class="pais">
+				<img src="images/paises/alemanha.png" alt="Alemanha" class="bandeira-pais">
+				<p class="nome-pais"> Alemanha </p>
+				<p class="populacao-pais"> <strong> População: </strong> 83.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Europa </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Berlim </p>
+			</div>
+			<div id="pais3" class="pais">
+				<img src="images/paises/japão.png" alt="Japão" class="bandeira-pais">
+				<p class="nome-pais"> Japão </p>
+				<p class="populacao-pais"> <strong> População: </strong> 126.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Ásia </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Tóquio </p>
+			</div>
+			<div id="pais4" class="pais">
+				<img src="images/paises/camaroes.png" alt="Camarões" class="bandeira-pais">
+				<p class="nome-pais"> Camarões </p>
+				<p class="populacao-pais"> <strong> População: </strong> 26.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> África </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Yaoundé </p>
+			</div>
+
+			<!-- OUTROS -->
+			<div id="pais5" class="pais">
+				<img src="images/paises/argentina.png" alt="Argentina" class="bandeira-pais">
+				<p class="nome-pais"> Argentina </p>
+				<p class="populacao-pais"> <strong> População: </strong> 45.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Américas </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Buenos Aires </p>
+			</div>
+
+			<div id="pais6" class="pais">
+				<img src="images/paises/portugal.png" alt="Portugal" class="bandeira-pais">
+				<p class="nome-pais"> Portugal </p>
+				<p class="populacao-pais"> <strong> População: </strong> 10.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Europa </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Lisboa </p>
+			</div>
+			<div id="pais7" class="pais">
+				<img src="images/paises/coreiaSul.png" alt="Coréia do Sul" class="bandeira-pais">
+				<p class="nome-pais"> Coréia do Sul </p>
+				<p class="populacao-pais"> <strong> População: </strong> 52.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Ásia </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Seul </p>
+			</div>
+			<div id="pais8" class="pais">
+				<img src="images/paises/egito.png" alt="Egito" class="bandeira-pais">
+				<p class="nome-pais"> Egito </p>
+				<p class="populacao-pais"> <strong> População: </strong> 100.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> África </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Cairo </p>
+			</div>
+
+			<!-- OUTROS -->
+
+			<div id="pais9" class="pais">
+				<img src="images/paises/australia.png" alt="Austrália" class="bandeira-pais">
+				<p class="nome-pais"> Austrália </p>
+				<p class="populacao-pais"> <strong> População: </strong> 22.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Ocêania </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Camberra </p>
+			</div>
+			<div id="pais10" class="pais">
+				<img src="images/paises/chile.png" alt="Chile" class="bandeira-pais">
+				<p class="nome-pais"> Chile </p>
+				<p class="populacao-pais"> <strong> População: </strong> 19.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Américas </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Santiago </p>
+			</div>
+			<div id="pais11" class="pais">
+				<img src="images/paises/belgica.png" alt="Bélgica" class="bandeira-pais">
+				<p class="nome-pais"> Bélgica </p>
+				<p class="populacao-pais"> <strong> População: </strong> 11.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Europa </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Bruxelas </p>
+			</div>
+			<div id="pais12" class="pais">
+				<img src="images/paises/samoa.png" alt="Samoa" class="bandeira-pais">
+				<p class="nome-pais"> Samoa </p>
+				<p class="populacao-pais"> <strong> População: </strong> 19.000 mil </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Ocêania </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Apia </p>
+			</div>
+
+			<!-- OUTROS -->
+
+			<div id="pais13" class="pais">
+				<img src="images/paises/costaMarfim.png" alt="Costa do Marfim" class="bandeira-pais">
+				<p class="nome-pais"> Costa do Marfim </p>
+				<p class="populacao-pais"> <strong> População: </strong> 26.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> África </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Iamussucro </p>
+			</div>
+
+			<div id="pais14" class="pais">
+				<img src="images/paises/eua.png" alt="Estados Unidos" class="bandeira-pais">
+				<p class="nome-pais"> Estados Unidos </p>
+				<p class="populacao-pais"> <strong> População: </strong> 328.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Américas </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Washington D.C </p>
+			</div>
+			<div id="pais15" class="pais">
+				<img src="images/paises/turquia.png" alt="Turquia" class="bandeira-pais">
+				<p class="nome-pais"> Turquia </p>
+				<p class="populacao-pais"> <strong> População: </strong> 82.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Ásia </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Ancara </p>
+			</div>
+			<div id="pais16" class="pais">
+				<img src="images/paises/holanda.png" alt="Holanda" class="bandeira-pais">
+				<p class="nome-pais"> Holanda (Países Baixos) </p>
+				<p class="populacao-pais"> <strong> População: </strong> 17.000.000 milhões </p>
+				<p class="continente-pais"> <strong> Continente: </strong> Europa </p>
+				<p class="capital-pais"> <strong> Capital: </strong> Amsterdã </p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

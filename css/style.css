@@ -1,0 +1,162 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand";
+}
+
+.container {
+  animation: showChange 0.5s forwards;
+}
+
+@keyframes showChange {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -30px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu div:first-child {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.menu .modo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
+.menu .modo img {
+  width: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.filtros .pesquisa {
+  display: flex;
+  align-items: center;
+}
+
+.filtros .pesquisa input {
+  font-size: 1rem;
+  font-family: "Quicksand";
+  border: 1px solid rgba(87, 87, 87, 0.5);
+  width: 300px;
+  padding: 10px;
+  outline: 0;
+}
+
+.filtros .pesquisa img {
+  width: 20px;
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+}
+
+.filtros .continentes {
+  font-size: 1rem;
+  font-family: "Quicksand";
+  border: 1px solid rgba(87, 87, 87, 0.5);
+  width: 250px;
+  padding: 10px;
+}
+
+.filtros .continentes a {
+  cursor: pointer;
+}
+
+.paises {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+}
+
+.paises div {
+  margin-bottom: 100px;
+}
+
+.paises img {
+  width: 70%;
+}
+
+.paises .nome-pais {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.paises p {
+  line-height: 30px;
+}
+
+.paises .pais.ativo {
+  animation: showPaises 0.5s forwards;
+}
+
+@keyframes showPaises {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -30px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .paises {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .paises div {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .filtros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .filtros div {
+    margin-bottom: 15px;
+  }
+
+  .paises {
+    grid-template-columns: 1fr;
+  }
+
+  .paises div {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
